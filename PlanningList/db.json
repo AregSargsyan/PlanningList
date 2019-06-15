@@ -1,103 +1,40 @@
 {
   "planlist": [
     {
-      "title": "ssaddasd",
-      "description": "s",
-      "status": "dDone",
-      "date": "s",
-      "placeName": "s",
-      "adress": "s",
-      "id": 10
-    },
-    {
-      "title": "f",
-      "description": "fg",
-      "status": "fg",
-      "date": "1990-02-02",
-      "placeName": "gf",
-      "adress": "fg",
-      "id": 12
-    },
-    {
       "title": "Car Wash",
       "description": "Wash my car",
       "status": "Undone",
-      "date": "1990-03-31",
+      "date": "2019-07-10",
       "placeName": "Yerevan",
-      "adress": "Baxramyan",
-      "id": 13
+      "adress": "Baxramyan 26",
+      "id": 1
     },
     {
-      "title": "areg",
-      "description": "dsf",
-      "status": "dfs",
-      "date": "1990-06-21",
-      "placeName": "sda",
-      "adress": "sda",
-      "id": 14
+      "title": "Cinema",
+      "description": "Alladin",
+      "status": "Undone",
+      "date": "2019-07-16",
+      "placeName": "Kinopark",
+      "adress": "Arshakunyats 20",
+      "id": 2
     },
     {
-      "title": "sad",
-      "description": "sad",
-      "status": "sad",
-      "date": "222222-02-22",
-      "placeName": "222",
-      "adress": "22",
-      "id": 15
+      "title": "Shopping",
+      "description": "buy clothes",
+      "status": "Undone",
+      "date": "2019-07-11",
+      "placeName": "Dalma Garden Mall",
+      "adress": "Tsitsernakaberd highway",
+      "id": 3
     },
     {
-      "title": "wqe",
-      "description": "weq",
-      "status": "ewqe",
-      "date": "2019-06-21T20:00:00.000Z",
-      "placeName": "wqe",
-      "adress": "weq",
-      "id": 16
-    },
-    {
-      "title": "dsf",
-      "description": "dsf",
-      "status": "sdf",
-      "date": "2019-06-21",
-      "placeName": "dsf",
-      "adress": "sfd",
-      "id": 17
-    },
-    {
-      "title": "dsf",
-      "description": "sdf",
-      "status": "dsf",
-      "date": "2019-06-22",
-      "placeName": "sdf",
-      "adress": "sdf",
-      "id": 18
-    },
-    {
-      "title": "sad",
-      "description": "sad",
-      "status": "sad",
-      "date": "111111-11-11",
-      "placeName": "111",
-      "adress": "11",
-      "id": 19
-    },
-    {
-      "title": "fdsf",
-      "description": "dsf",
-      "status": "dsf",
-      "date": "11111-11-11",
-      "placeName": "111",
-      "adress": "1111111111111111111",
-      "id": 20
-    },
-    {
-      "title": "fdsf",
-      "description": "fds",
-      "status": "dsf",
-      "date": "2019-06-15",
-      "placeName": "dsf",
-      "adress": "fsd",
-      "id": 21
+      "title": "Breakfast",
+      "description": "eat all eggs",
+      "status": "Done",
+      "date": "2019-06-16",
+      "placeName": "Home",
+      "adress": "Ohanov 7",
+      "id": 4
     }
   ]
 }

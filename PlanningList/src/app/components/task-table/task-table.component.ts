@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TaskType } from 'src/app/interfaces and constructors/task.interface';
+import { TaskType } from 'src/app/interfaces/task.interface';
 import { DatabaseService } from 'src/app/service/database.service';
 
 @Component({

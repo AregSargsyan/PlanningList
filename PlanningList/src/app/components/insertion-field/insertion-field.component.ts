@@ -1,7 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { DatabaseService } from 'src/app/service/database.service';
-import { TaskType } from '../../interfaces and constructors/task.interface'
+import { TaskType } from '../../interfaces/task.interface'
 
 @Component({
   selector: 'app-insertion-field',
