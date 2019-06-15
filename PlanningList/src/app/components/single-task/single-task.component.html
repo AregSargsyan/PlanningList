@@ -1,0 +1,30 @@
+<div class="flex-box" [class.done]="status === 'Done'" [class.toDay]="toDay">
+  <div class="flex-item">{{currentTask.title}}</div>
+  <div class="flex-item">{{currentTask.description}}</div>
+  <div class="flex-item">{{currentTask.status}}</div>
+  <div class="flex-item">{{currentTask.date}}</div>
+  <div class="flex-item">{{currentTask.placeName}}</div>
+  <div class="flex-item">{{currentTask.adress}}</div>
+  <div class="flex-item last">
+    <button (click)="removeTask.emit(currentTask.id)">X</button>
+    <button (click)="editing = !editing">Edit</button>
+    <button (click)="taskDone.emit(currentTask.id)">Done</button>
+  </div>
+</div>
+
+<div *ngIf="editing" class="flex-box " >
+  <form class="form" [formGroup]="editedRowForm" (ngSubmit)="this.taskEdited.emit({id: currentTask.id, result: editedRowForm.value})">
+
+    <input class="flex-item" type="text" formControlName="title" placeholder="title">
+    <input class="flex-item" type="text" formControlName="description" placeholder="description">
+    <input class="flex-item" type="text" formControlName="status" placeholder="status">
+    <input class="flex-item" type="date" formControlName="date" placeholder="date">
+    <input class="flex-item" type="text" formControlName="placeName" placeholder="placeName">
+    <input class="flex-item" type="text" formControlName="adress" placeholder="adress">
+<div class="flex-item last">
+
+  <button  type="submit">Edit</button>
+</div>
+  
+  </form>
+</div>

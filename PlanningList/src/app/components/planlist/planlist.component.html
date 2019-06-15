@@ -1,0 +1,69 @@
+<div class="container">
+  <div  class="filter-form">
+
+  
+  <mat-form-field>
+    <mat-label>Select a search option</mat-label>
+    <mat-select [(value)]="searchCategory">
+      <mat-option value="title">title</mat-option>
+      <mat-option value="placeName">placeName</mat-option>
+      <mat-option value="adress">adress</mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+  <mat-form-field class="example-form-field">
+    <input matInput type="text" placeholder="You are searching by {{searchCategory}}" [(ngModel)]="searchInput">
+    <button mat-button *ngIf="searchInput" matSuffix mat-icon-button aria-label="Clear" (click)="searchInput=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  
+  
+  <form [formGroup]="filterTerms"  class="filter-form">
+      <!-- Status -->
+      <mat-form-field>
+          <mat-label>Filter by Status</mat-label>
+          <mat-select formControlName="status">
+              <mat-option value=All>All</mat-option>
+              <mat-option value=Done>Done</mat-option>
+              <mat-option value=Undone>Undone</mat-option>
+          </mat-select>
+        </mat-form-field>
+        
+      <!-- Date  -->   
+      
+    
+
+     
+      <label>Filter by Date<input type="date" formControlName="date"></label> 
+      <!-- place -->
+      <mat-form-field>
+          <mat-label>Filter by Place</mat-label>
+          <mat-select formControlName="place">
+              <mat-option value=All>All</mat-option>
+              <mat-option  *ngFor="let place of generateProps('placeName')" [value]="place">{{place}}</mat-option>
+              </mat-select>
+        </mat-form-field>
+      <!-- adress -->
+
+      <mat-form-field>
+          <mat-label>Filter by Adress</mat-label>
+          <mat-select formControlName="adress">
+              <mat-option value=All>All</mat-option>
+              <mat-option  *ngFor="let adress of generateProps('adress')" [value]="adress">{{adress}}</mat-option>
+              </mat-select>
+        </mat-form-field>
+     
+  </form>
+  
+</div>
+  
+  <app-insertion-field (taskAdded)="addTask($event)"></app-insertion-field>
+  <app-task-table
+  [searchTerms]="{category: searchCategory, input: searchInput}" 
+  [allTasks]="fetchedList"
+  [filterTerms]="filterTerms.value"
+  ></app-task-table>
+  
+  
+</div>

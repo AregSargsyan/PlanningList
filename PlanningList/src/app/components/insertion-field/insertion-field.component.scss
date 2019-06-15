@@ -1,0 +1,18 @@
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+.flex-item{
+    flex: 50px;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    color: black;  
+    border-width: 1px;;
+}
+.last{
+    background: rgb(0, 119, 255);
+    flex: 10px;
+}
+

@@ -1,0 +1,18 @@
+
+.flex-box{
+    display: flex;
+    justify-content: center;
+}
+.flex-item{
+    flex: 50px;
+    padding: 5px;
+    text-align: center;
+    background: rgb(212, 231, 253);
+    color: gray;
+    font-weight: bold;
+    margin: 3px;
+    border-width: 1px;
+}
+.last{
+    flex: 10px;
+}

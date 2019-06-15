@@ -1,0 +1,12 @@
+<form [formGroup]="planList" (ngSubmit)="taskAdded.emit(planList.value); planList.reset()" class="form">
+  <input class="flex-item" type="text" formControlName="title" placeholder="title">
+  <input class="flex-item" type="text" formControlName="description" placeholder="description">
+  <input class="flex-item" type="text" formControlName="status" placeholder="status">
+  <input class="flex-item" type="date" formControlName="date" placeholder="date">
+  <input class="flex-item" type="text" formControlName="placeName" placeholder="placeName">
+  <input class="flex-item" type="text" formControlName="adress" placeholder="adress">
+  <div class="flex-item last">
+    <button  [disabled]="planList.invalid">ADD</button>
+  </div>
+ 
+</form>

@@ -1,0 +1,21 @@
+<div class="flex-box">
+  <div class="flex-item">Title</div>
+  <div class="flex-item">Description</div>
+  <div class="flex-item">Status</div>
+  <div class="flex-item">Date</div>
+  <div class="flex-item">Place Name</div>
+  <div class="flex-item">Adress</div>
+  <div class="flex-item last"></div>
+</div>
+<app-single-task 
+*ngFor="
+let task of allTasks 
+| search : searchTerms.input : searchTerms.category
+| filter : filterTerms.status : filterTerms.date : filterTerms.place : filterTerms.adress
+"
+[currentTask]="task"
+[status]="task.status"
+(removeTask)="removeTask($event)"
+(taskEdited)="editTask($event)"
+(taskDone)="markAsDone($event)"
+></app-single-task>

@@ -1,0 +1,58 @@
+
+.done{
+   opacity: 0.3; 
+}
+.toDay{
+    animation-name: flash;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.flex-box{
+    display: flex;
+    justify-content: center;
+    &:hover{
+        margin: 2px auto;
+        transition: 0.4s;
+    }
+}
+.flex-item{
+    flex: 50px;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    background: rgb(0, 119, 255);
+    color: white;  
+    
+    
+}
+input{
+    text-align: left;
+    background: initial !important;
+    color: black !important;
+    border-width: 1px;
+}
+
+.last{
+    flex: 10px;
+}
+
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+@keyframes flash {
+    from,
+    50%,
+    to {
+      opacity: 1;
+    }
+  
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  
+  
